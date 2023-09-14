@@ -1,0 +1,1 @@
+prettier --write icons8-github-48(1).png; echo "Formatted!" > ".config/._runShellCommandLibOutPipe"

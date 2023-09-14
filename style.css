@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+
+body{
+  background: #171717;
+}
+
+a {
+  color: #F9F9F9; 
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+
+
+#logo {
+  font-size: 1.5rem;
+  font-family: 'DM Sans',sans-serif ;
+  font-weight: 700; 
+  font-style: normal; 
+  color: #F9F9F9; 
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+main{
+  height: 550px;
+  display: flex;
+  justify-content: space-evenly;
+      align-items: center;
+}
+
+
+main .container{
+  width: 450px;
+  height: 440px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+ opacity: 0;
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+main .container h1{
+  color:#ffffff;
+   font-family: 'DM Sans',sans-serif ;
+  font-style: normal;
+  font-weight: 700;
+  white-space: pre-line;
+  font-size: 2.8rem;
+  margin-left: 4vw;
+}
+
+main .container p{
+  color: #828282; 
+  font-size: 23px;
+  font-family: 'DM Sans',sans-serif ;
+  font-weight: 500; 
+  margin-top: 15px;
+  margin-left: 4vw;
+}
+
+main .container button{
+  width: 180px;
+  height: 50px;
+  border: 1px solid #333;
+  background: #171717; 
+  padding: 12px 18px; 
+  cursor: pointer;
+  color: #F9F9F9; 
+  margin-top: 30px;
+   font-family: 'DM Sans',sans-serif ;
+  font-weight: 500; 
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 4vw;
+}
+
+main  .perfil{
+   width: 450px;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ opacity: 0;
+   animation: slideInRight 0.5s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+main  .perfil .imagem-perfil{
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+}
+
+.Section-sobre-mim{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   
+}
+
+.content-to-animate {
+    opacity: 0; 
+    transform: scale(0.5); 
+    animation: puffIn 0.5s forwards; 
+}
+
+
+@keyframes puffIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.Section-sobre-mim h2{
+  color: #F9F9F9; 
+   font-family: 'DM Sans',sans-serif ;
+  font-weight: 700; 
+  font-size: 2.3rem;
+  text-align: center;
+  margin-top:20px;
+}
+
+.Section-sobre-mim .sobre-mim{
+  width: 680px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+ 
+}
+
+
+.Section-sobre-mim .icones{
+  width: 350px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Section-sobre-mim .icones .icone-rede-sociais{
+  width: 50px;
+  height: 50px;
+  
+}
+
+.Section-sobre-mim .sobre-mim p{
+  color: #828282; 
+   font-family: 'DM Sans',sans-serif ;
+  font-weight: 400; 
+  font-size: 1.2rem;
+  line-height: 27px;
+  text-align: center;
+}
+
+
+
+.projetos{
+  width: 100%;
+  height: 900px;
+  background: #171717;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+
+
+.projetos h2{
+  color: #F9F9F9; 
+  text-align: center;
+  font-family: 'DM Sans',sans-serif ;
+  font-weight: 700; 
+  font-size: 2.5rem;
+  padding-top: 30px;
+  position: absolute;
+  
+}
+
+.projetos .div-projetos{
+  width: 390px;
+  height: 270px; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+  background: #2c2c2c;
+  margin-top: 150px;
+  cursor: pointer;
+  
+}
+
+.projetos .div-caixa-img{
+  width: 345px;
+  height: 150px;
+  margin-top: 15px;
+  
+}
+
+.projetos .div-caixa-img img{
+  width: 340px;
+  height: 145px;
+  
+}
+
+.projetos h3{
+  color: #FFF; 
+   font-family: 'DM Sans',sans-serif ;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  
+}
+
+.projetos p{
+  font-family: 'DM Sans',sans-serif ;
+  font-weight: 400;
+  color: #828282; 
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+
+.skills{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills h2{
+  color: #F9F9F9;
+ margin-bottom: 20px;
+ font-family: 'DM Sans',sans-serif ;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+}
+
+.skills .minhas-skills{
+  width: 400px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+    border: 1px solid #645c6d;
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5);
+}
+
+.icone-skills:hover{
+   filter: brightness(200%); 
+}
+
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #171717;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: white;
+    
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  main{
+    height: 500px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: start;
+    
+  }
+
+  main  .perfil{
+   width:300px;
+   height: 300px;
+  }
+
+  main  .perfil .imagem-perfil{
+  width: 255px;
+  height: 255px;
+    margin-top: 10px;
+  }
+
+  main .container{
+   
+  width: 300px;
+  height: 250px;
+    justify-content:flex-start;
+ 
+  }
+
+  main .container h1{
+    font-size: 2rem;
+    text-align:center ;
+  }
+
+  main .container p{
+    font-size: 19px;
+     text-align:center ;
+  }
+
+  main .container button{
+    margin-left:67px;
+  }
+
+  .Section-sobre-mim{
+  height: 600px;
+  
+  }
+
+  .Section-sobre-mim .sobre-mim{
+  width: 300px;
+  height: 400px;
+    
+    
+  }
+  .Section-sobre-mim .sobre-mim p{
+    line-height: 20px;
+  }
+
+  .Section-sobre-mim .icones{
+  width: 260px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+  
+  .section-icones .icones .icone-rede-sociais{
+  width: 40px;
+  height: 40px;
+}
+
+  .projetos{
+   flex-wrap: wrap;
+    width: 100%;
+    height:150em;
+  }
+
+  .projetos h2{
+    position: relative;
+  }
+
+  .projetos .div-projetos{
+  width: 280px;
+  height: 280px; 
+ margin-top: 30px;
+    
+  }
+
+  .projetos .div-caixa-img{
+    width: 280px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projetos .div-caixa-img img{
+  width: 260px;
+  height: 145px;
+}
+
+ 
+  .skills .minhas-skills{
+
+       width: 250px;
+     height: 150px;
+  }
+  .icone-skills{
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+}
